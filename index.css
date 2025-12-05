@@ -1,0 +1,193 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #FBF8CC;
+    color:#03045E;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width:92%;
+    height:100%;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:20px;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color:#03045E;
+}
+
+nav a:hover{
+    color: #f5ee84;
+}
+
+.socials{
+    display:flex;
+    gap:20px;
+    cursor:pointer;
+}
+
+.socials img:hover{
+    transform: translateY(-5px);
+}
+
+article .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hleft *{
+    font-weight: bold;
+}
+
+#hright1{
+    border-radius: 500px;
+    height: 250px;
+    position: relative;
+}
+
+#hright2{
+    position:absolute;
+    top:140px;
+    right:90px;
+    height:30px;
+}
+#hright3{
+    position: absolute;
+    bottom:380px;
+    z-index:5;
+    height:20px;
+    background:transparent;
+}
+#hright4{
+    position:absolute;
+    height:250px;
+    right:70px;
+    top:155px;
+    background:transparent;
+}
+
+.job{
+    font-size: 40px;
+    font-weight: 1000;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+h2{
+    font-weight: bold;
+    color:#F5EE84;
+    font-size: 50px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+.spacing{
+    margin-right: 400px;
+    margin-bottom: 30px;
+}
+.memory{
+    margin:100px 200px 0px
+}
+
+.time{
+    font-weight: bold;
+}
+
+.memory li{
+    margin-top: 50px;
+}
+
+
+.hbutton{
+    background: #f5ee84;
+    border: 1px, solid;
+    padding:5px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hbutton:hover{
+    background-color: rgba(239, 239, 15, 0.716);
+    transform: translateY(-5px);
+}
+
+.swork {
+    display:flex;
+    justify-content: space-between;
+}
+.swork img{
+    height:300px;
+    width:400px;
+}
+.spacin{
+    margin-right:250px;
+}
+.swork time{
+    display:block;
+    font-style: italic;
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+.swork img:hover, .lcontact img:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.scontact{
+    display:flex;
+    justify-content:space-between;
+}
+.rcontact{
+    margin-left:30px;
+    margin-right: 650px;
+}
+.rcontact a{
+    display:block;
+}
+
+.lcontact img{
+    height:200px;
+    width:250px;
+}
+
+@keyframes appearance{
+    from{
+        opacity:0;
+        scale:0.5;
+    }
+    to{
+        opacity:1;
+        scale:1;
+    }
+}
+
+#bio, #work, #contact{
+    animation: appearance linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%
+}
